@@ -18,11 +18,25 @@ public class MovieModel {
     private String seatNumber; 
     private String date; 
 
-    // Default Constructor
+    /**
+    * Default Constructor for MovieModel.
+    * Initializes a new instance of the MovieModel class without setting any values.
+    */
     public MovieModel() {
     }
 
-    // Parameterized Constructor
+    /**
+    * Parameterized Constructor for MovieModel.
+    * Initializes a new instance of the MovieModel class with the specified values.
+    * @param bookingID the unique booking ID for the movie reservation
+    * @param name the name of the customer
+    * @param email the email address of the customer
+    * @param contact the contact number of the customer
+    * @param movie the name of the movie
+    * @param showTime the show time of the movie
+    * @param seatNumber the seat number for the customer
+    * @param date the date of the movie reservation
+    */
     public MovieModel(int bookingID, String name, String email, String contact, 
                         String movie, String showTime, String seatNumber, String date) {
         this.name = name;
